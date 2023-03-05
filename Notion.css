@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name           notion theme
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Notion theme based on Nord
+@author         Mightymjolnir
+==/UserStyle== */
+
+@-moz-document domain("notion.so") {
+
+    /*  整体样式  */
+    div.notion-page-content {
+        font-family: "Cascadia Mono", 方正黑体简体
+    }
+
+    /* 标题样式 */
+    div.notranslate[placeholder^="Heading"],
+    div.notranslate[placeholder^="Untitled"] {
+        font-family: Cinzel, serif !important;
+    }
+
+    div.notranslate[placeholder^="Heading 1"] {
+        color: #bf616a
+    }
+
+    div.notranslate[placeholder^="Heading 2"] {
+        color: #81a1c1
+    }
+
+    div.notranslate[placeholder^="Heading 3"] {
+        color: #8fbcbb
+    }
+
+    /* 粗体样式 */
+    span.notion-enable-hover[style*=font-weight] {
+        color: #81a1c1
+    }
+
+    /* url 样式 */
+    a.notion-link-token {
+        color: #d08770 !important;
+    }
+
+    a.notion-link-token:hover {
+        color: #81a1c1 !important
+    }
+
+    span[class^="link-annotation"] {
+        opacity: 1 !important;
+    }
+
+    /* scroll bar */
+    ::-webkit-scrollbar-thumb {
+        background: rgba(189, 191, 195, 0.8) !important
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(189, 191, 195, 1) !important
+    }
+}
