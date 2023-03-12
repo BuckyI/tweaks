@@ -51,10 +51,11 @@
 
     /* scroll bar */
     ::-webkit-scrollbar-thumb {
-        background: rgba(189, 191, 195, 0.8) !important
+        background: rgba(189, 191, 195, 0.3) !important
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: rgba(189, 191, 195, 1) !important
+        border: 1.5px solid rgba(189, 191, 195, 1);
+        background: rgba(189, 191, 195, 0.5) !important
     }
 }
